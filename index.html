@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> <title>Yunus Emre Uyar</title>
+</head>
+<body>
+    <div class="about">
+        <ul class="circles">
+            <li>&#9004;</li>
+            <li>E=mc<sup>2</sup></li>
+            <li>PV=nRT</li>
+            <li>Vena <br> Contracta</li>
+            <li>&#9004;</li>
+            <li>pH=-log[H<sup>+</sup>]</li>
+            <li>Pulse</li>
+            <li>&#9004;</li>
+            <li>&#9004;</li>
+            <li>&#9187;</li>
+        </ul>
+        <img class="profile-pic" src="src/Website Design.svg" alt="Yunus Emre Uyar">
+        <div class="about-sec">
+
+            <pre class="typewriter hide-on-sm">
+<span class="var-type-highlight">const</span> obj = {
+    name: <span class="string-highlight">'Yunus Emre'</span>,
+    surname: <span class="string-highlight">'Uyar'</span>,
+    type: [<span class="string-highlight">'Chemical Engineer'</span>,
+           <span class="string-highlight">'Web Developer'</span>],
+    skills: [<span class="string-highlight">'Backend'</span>,
+            <span class="string-highlight"> 'Frontend'</span>,
+            <span class="string-highlight"> 'Process Control'</span>]
+}; </pre>
+    
+            <div class="typewriter alternate">
+Hi, my name is<span class="var-type-highlight"> Yunus Emre Uyar</span>.
+I am <span class="string-highlight">Chemical Engineer</span> and
+<span class="string-highlight">Full Stack Web Developer</span>. </div>
+
+        </div>
+
+        <ul class="personal-links">
+            <li><a class="link" target="_blank" href="https://www.linkedin.com/in/yunusemreuyar/"><img src="src/icons/linkedin.svg" class="link-img" alt="linkedin"></a></li>
+            <li><a class="link" target="_blank" href="https://github.com/YunusEmreUyar/"><img class="link-img" src="src/icons/github.png" alt="github"></a></li>
+            <li><a class="link" target="_blank" href="https://www.instagram.com/yeuyar/"><img src="src/icons/instagram.png" class="link-img" alt="instagram"></a></li>
+        </ul>
+    </div>
+
+    <h1 class="projects-title">Projects</h1>
+    <div class="projects">
+        <div class="project">
+            <h2 class="project-name">Blog made with Django</h2>
+            <div class="project-body">
+                <img src="src/projects/blog.png" class="project-img">
+                <p class="project-description">
+                    That blog has minimalistic design powered by Bootstrap3,<br>
+                    Django used as backend technology and coded for learning Django backend. <br>
+                    That was my first django web application. <br>
+                    The project has authentication system, so you can login and interact with blog posts 
+                    like comment or liking. <br>
+                    Hosting by heroku.
+                    <br>
+                    <button class="learn-more" onclick="location.href='http://artandmovieisnotgonnabethename.herokuapp.com'">
+                        <span aria-hidden="true" class="circle">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Live Demo</span>
+                    </button>
+                </p>
+            </div>
+        </div>
+        <div class="project">
+            <h2 class="project-name">Keepmo-Note Taking App</h2>
+            <div class="project-body">
+                <p class="project-description">
+                    Keepmo is an note taking app, with that you can take your notes private or public. <br>
+                    Every notes must be in a notebook. If you share a notebook, the notebook will display in explore tab. <br>
+                    You can also investigate other users notebooks. <br>
+                    You can customize your note and notebooks colors. <br>
+                    The project has an authentication system. <br>
+                    Hosting on pythonanywhere platform.
+                    <br>
+                    <button class="learn-more" onclick="location.href='http://keepmo.pythonanywhere.com/'">
+                        <span aria-hidden="true" class="circle">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Live Demo</span>
+                    </button>
+                </p>
+                <img class="project-img" src="src/projects/keepmo.png">
+            </div>
+        </div>
+        <div class="project">
+            <h2 class="project-name">CARBON06 Showcase</h2>
+            <div class="project-body">
+                <img src="src/projects/carbon06.png" class="project-img">
+                <p class="project-description">
+                    This project serves CARBON06 magazine's all volumes in it. <br>
+                    This web app is very simple: admin can read, update and delete journal objects and their properties. <br>
+                    And second section of the website is contributors of CARBON06 <br>
+                    <br>
+                    <button class="learn-more" onclick="location.href='http://carbon06.pythonanywhere.com/'">
+                        <span aria-hidden="true" class="circle">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Live Demo</span>
+                    </button>
+                </p>
+            </div>
+        </div>
+        <div class="project">
+            <h2 class="project-name">LinkME Social Media App</h2>
+            <div class="project-body">
+                <p class="project-description">
+                    This project has basic authentication system. <br>
+                    You can customize your profile and interact with others! <br>
+                    You can create groups and chat or you can text someone one to one. <br>
+                    Django channels and redis server implemented. <br>
+                    <br>
+                    <button class="learn-more" onclick="alert('Coming soon');">
+                        <span aria-hidden="true" class="circle">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Live Demo</span>
+                    </button>
+                </p>
+                <img src="src/projects/linkME.png" class="project-img">
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div class="certs">
+        <h1 class="certs-title">Certificates</h1>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Google-Coursera')">Google-Coursera</button>
+            <button class="tablinks" onclick="openCity(event, 'SoloLearn')">SoloLearn</button>
+            <button class="tablinks" onclick="openCity(event, 'BTK Akademi')">BTK Akademi</button>
+        </div>
+        <div id="Google-Coursera" class="tabcontent">
+            <div class="cert">
+                <h3 class="cert-title">Google IT Automation with Python</h3>
+                <img src="src/coursera/0.png"></img>
+            </div>
+            <div class="cert">
+                <h3 class="cert-title">Crash Course on Python</h3>
+                <img src="src/coursera/1.png"></img>
+            </div>
+            <div class="cert">
+                <h3 class="cert-title">Using Python to Interact with the Operating System</h3>
+                <img src="src/coursera/2.png"></img>
+            </div>
+            <div class="cert">
+                <h3 class="cert-title">Introduction to Git and GitHub</h3>
+                <img src="src/coursera/3.png"></img>
+            </div>
+            <div class="cert">
+                <h3 class="cert-title">Troubleshooting and Debugging Techniques</h3>
+                <img src="src/coursera/4.png"></img>
+            </div>
+            <div class="cert">
+                <h3 class="cert-title">Configuration Management and the Cloud</h3>
+                <img src="src/coursera/5.png"></img>
+            </div>
+            <div class="cert">
+                <h3 class="cert-title">Automating Real-World Tasks with Python</h3>
+                <img src="src/coursera/6.png"></img>
+            </div>
+          </div>
+
+          <div id="SoloLearn" class="tabcontent">
+            <div class="cert">
+                <h3 class="cert-title">Java</h3>
+                <img src="src/sololearn/java.png"></img>
+            </div>
+            <div class="cert">
+                <h3 class="cert-title">Python</h3>
+                <img src="src/sololearn/python.png"></img>
+            </div>
+            <div class="cert">
+                <h3 class="cert-title">JavaScript</h3>
+                <img src="src/sololearn/javascript.png"></img>
+            </div>
+            <div class="cert">
+                <h3 class="cert-title">HTML</h3>
+                <img src="src/sololearn/html.jpg"></img>
+            </div>
+            <div class="cert">
+                <h3 class="cert-title">CSS</h3>
+                <img src="src/sololearn/css.png"></img>
+            </div>
+            <div class="cert">
+                <h3 class="cert-title">JQuery</h3>
+                <img src="src/sololearn/jquery.png"></img>
+            </div>
+          </div>
+          
+          <div id="BTK Akademi" class="tabcontent">
+            <div class="cert">
+                <h3 class="cert-title">Java</h3>
+                <img src="src/btkakademi/java.png"></img>
+            </div>
+            <div class="cert">
+                <h3 class="cert-title">Python</h3>
+                <img src="src/btkakademi/python.png"></img>
+            </div>
+          </div>
+    </div>
+    -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    </body>
+</html>
