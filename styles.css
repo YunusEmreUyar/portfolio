@@ -202,6 +202,10 @@ body {
     color: #fdee00;
 }
 
+.projects-title {
+    margin: 10px 10px;
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -224,6 +228,7 @@ body {
 
 .project-img {
     max-width: 35%;
+    height: auto;
     border-radius: 20px;
 }
 
@@ -412,15 +417,24 @@ color: #fff;
     .about {
         flex-direction: column;
         justify-content: flex-start;
-        gap: 15%;
+        gap: 10%;
     }
-    
+
+    .project-body {
+        flex-direction: column;
+    }
+
+    .project-img {
+        max-width: 100%;
+        height: auto;
+    }
 
     .hide-on-sm {
         display: none;
     }
     .alternate {
         display: block;
+        min-width: 50vw;
     }
 
     .profile-pic {
