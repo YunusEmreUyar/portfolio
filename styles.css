@@ -142,13 +142,13 @@ h1, h2, h3, h4, h5, h6 {
     height: 25px;
     animation-delay: 15s;
     animation-duration: 45s;
+    font-size: 30px;
 }
 
 .circles li:nth-child(9){
     left: 20%;
     height: 15px;
     animation-delay: 2s;
-    font-size: 30px;
     animation-duration: 35s;
 }
 
@@ -196,6 +196,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 32px;
     height: 32px;
     margin: 10px;
+    transition: transform 500ms ease;
+}
+
+.link-img:hover {
+    transform: translateY(-10px);
 }
 
 .heading {
@@ -424,6 +429,17 @@ color: #fff;
         flex-direction: column;
         justify-content: flex-start;
         gap: 10%;
+    }
+
+    .personal-links {
+        position: absolute;
+        right: 5%;
+        top: 50%;
+        bottom: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .project-body {
