@@ -94,4 +94,72 @@ projects.forEach((project, index) => {
   });
 
 });
-    
+
+
+// Fourier series
+
+let time = 0;
+let wave = [];
+let path = []; 
+
+var radiusBase = 75;
+var w = window.innerWidth;
+var h = 300; 
+let numCircles;
+let frequency;
+
+function setup() {
+    createCanvas(w, h);
+    numCircles = createSlider(1, 9, 4);
+    frequency = createSlider(1, 5, 3);
+}
+
+function draw() {
+
+    background(0);
+    translate(window.innerWidth * 0.25, 150);
+
+    let x = 0;
+    let y = 0;
+
+    for (let i = 0; i < numCircles.value(); i++) {
+        let prevx = x;
+        let prevy = y;
+
+        let n = i * 2 + 1;
+        let radius = radiusBase * (4 / (n * PI));
+        x += radius * cos(n * time);
+        y += radius * sin(n * time);
+
+        stroke(255, 100);
+        noFill();
+        ellipse(prevx, prevy, radius * 2);
+
+        stroke(0, 255, 0);
+        line(prevx, prevy, x, y);
+    }
+    wave.unshift(y);
+
+
+    translate(200, 0);
+    line(x - 200, y, 0, wave[0]);
+    beginShape();
+    noFill();
+    for (let i = 0; i < wave.length; i++) {
+        vertex(i, wave[i]);
+    }
+    endShape();
+
+    time += frequency.value() / 100;
+
+    if (wave.length > 500) {
+        wave.pop();
+    }
+}
+
+window.onresize = function() {
+    w = window.innerWidth * 0.7;
+    h = 300;  
+    canvas.size(w,h);
+    radiusBase = 15;
+  }

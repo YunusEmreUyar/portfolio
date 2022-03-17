@@ -412,6 +412,28 @@ color: #fff;
     height: auto;
 }
 
+.simulation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    display: block;
+}
+
+input[type=range] {
+    width: 50vw;
+    align-self: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @keyframes animate-circles {
     from {
@@ -470,4 +492,14 @@ color: #fff;
         height: fit-content;
         font-size: 24px;
     }
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+body {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
 }
