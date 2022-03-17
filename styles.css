@@ -14,6 +14,7 @@ body {
     font-family: 'Lora', serif;
     background-color: #000;
     color: #fff;
+    margin-bottom: 40px;
 }
 
 .overflow {
@@ -174,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     flex-direction: column;
     position: relative;
-    width: 35%;
+    width: 45%;
     right: 20;
     justify-content: center;
     align-items: flex-start;
@@ -224,6 +225,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: stretch;
+    font-family: Poppins;
 }
 
 .project-name {

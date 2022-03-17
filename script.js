@@ -135,13 +135,14 @@ function draw() {
         noFill();
         ellipse(prevx, prevy, radius * 2);
 
-        stroke(0, 255, 0);
+        stroke(255,0,0, 100);
         line(prevx, prevy, x, y);
     }
     wave.unshift(y);
 
 
     translate(200, 0);
+    stroke(0,255,0);
     line(x - 200, y, 0, wave[0]);
     beginShape();
     noFill();
