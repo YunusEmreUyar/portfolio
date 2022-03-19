@@ -102,9 +102,9 @@ let time = 0;
 let wave = [];
 let path = []; 
 
-var radiusBase = 75;
-var w = window.innerWidth;
-var h = 300; 
+let w = window.innerWidth;
+let radiusBase = w > 720 ? 75 : w/8; 
+let h = 300; 
 let numCircles;
 let frequency;
 
@@ -158,10 +158,3 @@ function draw() {
         wave.pop();
     }
 }
-
-window.onresize = function() {
-    w = window.innerWidth * 0.7;
-    h = 300;  
-    canvas.size(w,h);
-    radiusBase = 15;
-  }
