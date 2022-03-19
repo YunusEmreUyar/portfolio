@@ -229,9 +229,10 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-#before-canvas h3 {
+#before-canvas h2 {
     position: absolute;
-    top: 25%;
+    top: 5%;
+    font-weight: 400;
     text-align: center;
     color:#fdee00;
     margin: 10px;
@@ -454,6 +455,11 @@ main {
     align-items: center;
 }
 
+/***********************************************************************/
+
+
+
+/***********************************************************************/
 
 @keyframes animate-circles {
     from {

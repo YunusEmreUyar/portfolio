@@ -107,9 +107,14 @@ let radiusBase = w > 720 ? 75 : w/8;
 let h = 300; 
 let numCircles;
 let frequency;
+let c;
+
+function windowResized() {
+  c.resizeCanvas(windowWidth, windowHeight);
+}
 
 function setup() {
-    const c = createCanvas(w, h);
+    c = createCanvas(w, h);
     c.parent("before-canvas");
     numCircles = createSlider(1, 9, 4);
     frequency = createSlider(1, 5, 3);
