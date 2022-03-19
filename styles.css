@@ -220,6 +220,23 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px 10px;
 }
 
+#before-canvas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#before-canvas h3 {
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    color:#fdee00;
+    margin: 10px;
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;

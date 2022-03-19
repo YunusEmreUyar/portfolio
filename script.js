@@ -109,7 +109,8 @@ let numCircles;
 let frequency;
 
 function setup() {
-    createCanvas(w, h);
+    const c = createCanvas(w, h);
+    c.parent("before-canvas");
     numCircles = createSlider(1, 9, 4);
     frequency = createSlider(1, 5, 3);
 }
@@ -123,8 +124,8 @@ function draw() {
     let y = 0;
 
     for (let i = 0; i < numCircles.value(); i++) {
-        let prevx = x;
-        let prevy = y;
+        let prevX = x;
+        let prevY = y;
 
         let n = i * 2 + 1;
         let radius = radiusBase * (4 / (n * PI));
@@ -133,16 +134,16 @@ function draw() {
 
         stroke(255, 100);
         noFill();
-        ellipse(prevx, prevy, radius * 2);
+        ellipse(prevX, prevY, radius * 2);
 
         stroke(255,0,0, 100);
-        line(prevx, prevy, x, y);
+        line(prevX, prevY, x, y);
     }
     wave.unshift(y);
 
 
     translate(200, 0);
-    stroke(0,255,0);
+    stroke(0,255,0, 150);
     line(x - 200, y, 0, wave[0]);
     beginShape();
     noFill();
