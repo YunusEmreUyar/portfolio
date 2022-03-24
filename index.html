@@ -166,20 +166,12 @@ Ben bir <span class="string-highlight">Kimya Mühendisi</span> ve bir
     <br>
     <h1 class="projects-title">Sertifikalar</h1>
     <br>
-    
-    <div class="tabs">
-        <input type="radio" id="tab1" name="tab-control" checked>
-        <input type="radio" id="tab2" name="tab-control">
-        <input type="radio" id="tab3" name="tab-control">
-        <ul>
-            <li title="Coursera sertifikaları"><label for="tab1" role="button"><br><span>Google</span></label></li>
-            <li title="BTK Akademi sertifikaları"><label for="tab2" role="button"><br><span>BTK Akademi</span></label></li>
-            <li title="Sololearn sertifikaları"><label for="tab3" role="button"><br><span>Sololearn</span></label></li>
-        </ul>
-  
-        <div class="content">
-            <section>
-                <h2>Google</h2>
+
+    <div class="layout">
+        <input name="nav" type="radio" class="nav home-radio" id="home" checked="checked" />
+        <div class="page home-page">
+          <div class="page-contents">
+                <br>
                 <h4>Google IT Automation with Python Professional Certificate</h4>
                 <br>
                 <p class="content-paragraph">
@@ -278,11 +270,18 @@ Ben bir <span class="string-highlight">Kimya Mühendisi</span> ve bir
                     Öğrenilen becerileri kullanarak bir çözüm oluşturmak. <br> 
                     Başarı derecesi <span class="string-highlight">100%</span>.
                 </p>
-            </section>
-            
-            
-            <section>
-                <h2>BTK Akademi</h2>
+          </div>
+        </div>
+        <label class="nav" for="home">
+          <span>
+            Coursera
+          </span>
+        </label>
+      
+        <input name="nav" type="radio" class="about-radio" id="about" />
+        <div class="page about-page">
+          <div class="page-contents">
+                <br>
                 <h4>Sıfırdan İleriye Python Programlama</h4>
                 <br>
                 <p class="content-paragraph">
@@ -297,10 +296,18 @@ Ben bir <span class="string-highlight">Kimya Mühendisi</span> ve bir
                     Programlama dizayn şemalarına giriş yapıldı java ile nasıl bir paket sistemi yapılmalı gibi konular ele alındı.
                 </p>
                 <br>
-            </section>            
-            
-            <section>
-                <h2>Sololearn</h2>
+          </div>
+        </div>
+        <label class="nav" for="about">
+          <span>
+          BTK Akademi
+            </span>
+          </label>
+      
+        <input name="nav" type="radio" class="contact-radio" id="contact" />
+        <div class="page contact-page">
+          <div class="page-contents">
+                <br>
                 <h4>HTML5</h4>
                 <br>
                 <p class="content-paragraph">
@@ -336,9 +343,15 @@ Ben bir <span class="string-highlight">Kimya Mühendisi</span> ve bir
                 <p class="content-paragraph">
                     Bu kurs boyunca JQuery nedir ne nerede nasıl kullanılmalıdır öğrenildi.
                 </p>
-            </section>
+           
+          </div>
         </div>
-    </div>
+        <label class="nav" for="contact">
+            <span>
+            Sololearn
+            </span>  
+        </label>
+      </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
