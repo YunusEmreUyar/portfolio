@@ -118,6 +118,8 @@ function setup() {
     c.parent("before-canvas");
     numCircles = createSlider(1, 9, 4);
     frequency = createSlider(1, 5, 3);
+    numCircles.parent("before-canvas");
+    frequency.parent("before-canvas");
 }
 
 function draw() {
