@@ -1,3 +1,5 @@
+// Typewriter
+
 const setupTypewriter = (t) => {
   var HTML = t.innerHTML;
 
@@ -70,12 +72,14 @@ typer.forEach((i) => {
   }
 });
 
+// GSAP Timeline
+
 const projects = document.querySelectorAll(".project");
 projects.forEach((project, index) => {
-  var yPos = -100;
-  var xPos = "-50%";
+  let yPos = 100;
+  let xPos = "0%";
   if(index %2 == 0) {
-    xPos = "50%";
+    yPos = 100;
   }
   const timeline = gsap.timeline({
     scrollTrigger: {
@@ -83,7 +87,7 @@ projects.forEach((project, index) => {
       start: "center bottom",
       ease: "ease",
       pin: "pin",
-      toggleAnimations: "play reverse"
+      toggleAnimations: "play"
     }
   })
   .from(project, {
@@ -96,7 +100,7 @@ projects.forEach((project, index) => {
 });
 
 
-// Fourier series
+/* Fourier series
 
 let time = 0;
 let wave = [];
@@ -112,6 +116,7 @@ let c;
 function windowResized() {
   c.resizeCanvas(windowWidth, windowHeight);
 }
+
 
 function setup() {
     c = createCanvas(w, h);
@@ -165,3 +170,4 @@ function draw() {
         wave.pop();
     }
 }
+*/

@@ -41,6 +41,9 @@ h1, h2, h3, h4, h5, h6 {
 .var-type-highlight{
     color: #C0AD60;
 }
+.enum-type-highlight {
+    color: #56b6c2;
+}
 .string-highlight{
     color: rgba(253, 149, 90, 0.8);
 }
@@ -200,9 +203,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px;
 }
 
-.link-container {
-    
-}
 
 .link-container:hover .link-img {
     transition: transform 500ms ease;
