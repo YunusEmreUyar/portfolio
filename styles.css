@@ -49,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .typewriter{
+    backdrop-filter: blur(3px);
     font-size: 25px;
     width: 100%;
     padding: 0;
@@ -562,4 +563,25 @@ body::-webkit-scrollbar {
 body {
 -ms-overflow-style: none;
 scrollbar-width: none;
+}
+
+.tech-stack {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.tech-icon {
+    max-width: 8%;
+}
+
+.tech-icon:first-child {
+    margin-left: 10px;
+}
+
+.tech-section {
+    margin-top: 30px;
+    color: #56b6c2;
+    text-transform: capitalize;
 }

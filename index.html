@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta property="og:image" content="//yunusemreuyar.github.io/src/Website-Design.png">
@@ -27,7 +27,7 @@
             <li>PV=nRT</li>
             <li>Vena <br> Contracta</li>
             <li>&#9004;</li>
-            <li>pH=-log[H<sup>+</sup>]</li>
+            <li>pH=-log[H]<sup>+</sup></li>
             <li>Pulse</li>
             <li>&#9004;</li>
             <li>Laminar <br> Flow</li>
@@ -63,19 +63,117 @@ Ben bir <span class="string-highlight">Kimya Mühendisi</span> ve
 
     <h1 class="projects-title">Projelerim</h1>
     <div class="projects">
+
+        <div class="project">
+            <h2 class="project-name">Araç Kiralama Uygulaması</h2>
+            <div class="project-body">
+                <img src="src/projects/rentACar.png" class="project-img">
+                <p class="project-description">
+                    Bu proje, mikroservis yapısı kullanılarak geliştirilen bir araç kiralama uygulamasıdır.
+                    Projede Java yazılım dünyasındaki güncel teknolojiler, teknikler ve kodlama prensipleri uygulanmıştır.
+                    <br><br>
+                    Uygulama içerisinde mikroservisler arasında senkron (open feign) ve asenkron (kafka) iletişim bulunmaktadır.
+                    <br><br>
+                    Mikroservislerin uygulama güvenliği ve kullanıcı mekanizması keycloak ile sağlanmaktadır. Mikroservisler; API Gateway, Discovery Server ve 
+                    Config Server gibi teknolojiler ile arasında birer iletişime sahiptir.
+                    Kafka, Postgresql, Mongodb, Mysql gibi teknolojiler proje ana dizini içerisindeki docker compose dosyasıyla konfigüre edilmiştir.
+                    <br>
+                    <span class="tech-section">Teknolojiler
+                        <span class="tech-stack">    
+                            <img src="src/icons/java.svg" class="tech-icon">        
+                            <img src="src/icons/spring.svg" class="tech-icon">
+                            <img src="src/icons/maven.svg" class="tech-icon">
+                            <img src="src/icons/docker.svg" class="tech-icon">
+                            <img src="src/icons/postgresql.svg" class="tech-icon">
+                            <img src="src/icons/mysql.svg" class="tech-icon">
+                            <img src="src/icons/mongodb.svg" class="tech-icon">
+                            <img src="src/icons/data-kafka.svg" class="tech-icon">
+                            <img src="src/icons/keycloak.svg" class="tech-icon">
+                            
+                        </span>
+                    </span>
+
+
+                    
+                    <button class="learn-more" onclick="location.href='https://github.com/YunusEmreUyar/TurkcellMicroServices'">
+                        <span aria-hidden="true" class="circle">
+                        <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Kaynak kod</span>
+                    </button>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="project">
+            <h2 class="project-name">LinkME Sosyal Medya Uygulaması</h2>
+            <div class="project-body">
+                <img src="src/projects/linkME.png" class="project-img">
+                <p class="project-description">
+
+                    Bu proje django, django-drf, sqlite3, django-channels, nodejs ve redis kullanılarak yapılmıştır.<br>
+                    
+                    Projenin vizyonu, pandemi döneminde kimya mühendisliği öğrencilerinin kendi aralarında, ilgi alanlarına göre bağlantı kurabilmelerini
+                    ve bu bağlantılarla akıllarındaki proje fikirlerini birlikte tartışabilecekleri ve geliştirebilecekleri bir platform haline gelmektir.<br>
+                    <br>
+                    Öğrenciler sistem üzerinden gerçek zamanlı olarak mesajlaşabilmekte (websocket) ve isterlerse 
+                    grup içerisinde görüntülü konuşabilmektedir (webrtc).<br><br>
+                    Gerçek zamanlı sohbet uygulaması django-channels ve redis yardımıyla yapılmış olup,<br>
+                    Görüntülü sohbet uygulaması nodejs ve socketio ile yapılmıştır.
+                    <br>
+                    Ayrıca kullanıcılar birbirlerine özel mesaj da atabilmektedir.<br>
+
+                    <span class="tech-section">Teknolojiler
+                        <span class="tech-stack">    
+                            <img src="src/icons/python.svg" class="tech-icon">        
+                            <img src="src/icons/django.svg" class="tech-icon">
+                            <img src="src/icons/sqlite.svg" class="tech-icon">
+                            <img src="src/icons/node-js.svg" class="tech-icon">
+                            <img src="src/icons/webrtc.svg" class="tech-icon">
+                            <img src="src/icons/redis.svg" class="tech-icon">
+                            <img src="src/icons/socket-io.svg" class="tech-icon">
+
+                            <img src="src/icons/materializecss.svg" class="tech-icon">
+                            
+                        </span>
+                    </span>
+
+                    <button class="learn-more" onclick="alert('Yakında gelecek');">
+                        <span aria-hidden="true" class="circle">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Kaynak kod</span>
+                    </button>
+                </p>
+            </div>
+        </div>
+
         <div class="project">
             <h2 class="project-name">Django Blog</h2>
             <div class="project-body">
                 <img src="src/projects/blog.png" class="project-img">
                 <p class="project-description">
 
-                    Bu proje benim yaptığım ilk django projesiydi ve yaparken Django kütüphanesini öğrenmiştim. <br>
-                    Bu projeyi artık gerçek bir blog olarak kullanıyorum ve sürekli yeni özellikler ekliyorum. <br>
-                    Bu proje arkaplanda django, django rest framework ve sqlite3 veritabanını kullanıyor.<br>
-                    Ön taraf içinse materializecss kütüphanesini kullanmakta.<br>
-                    Session auth ve token auth implemente edildi bunun nedeni bu uygulamanın bir de react native mobil uygulamasının olması.<br>
-                    Kullanıcılar kayıt olabilir ve blog yazılarıyla etkileşime girebilirler.<br>
+                    Bu proje, Django çerçevesini öğrenmek için geliştirdiğim ilk projemdir. <br>
+                    Bu proje ile Python Django, Sqlite3, Django Rest Framework gibi güncel Python kütüphanelerini ve araçlarını kullandım. <br>
+                    Projenin ön yüzünde materializecss çerçevesi kullanlıyor ve oldukça sade bir tasarıma sahip. <br>
+
+                    Bu proje ile web temellerini ve güncel teknikleri öğrendim. <br>
+                    Bu proje, session auth ve token auth mekanizmalarını içerisinde barındırıyor.<br>
+    
                     Pythonanywhere platformu üzerinde bedava planda sunuluyor.<br>
+                    
+                    <span class="tech-section">Teknolojiler
+                        <span class="tech-stack">    
+                            <img src="src/icons/python.svg" class="tech-icon">        
+                            <img src="src/icons/django.svg" class="tech-icon">
+                            <img src="src/icons/sqlite.svg" class="tech-icon">
+                            <img src="src/icons/materializecss.svg" class="tech-icon">
+                            
+                        </span>
+                    </span>
+
                     <button class="learn-more" onclick="location.href='https://pencereblog.pythonanywhere.com'">
                         <span aria-hidden="true" class="circle">
                         <span class="icon arrow"></span>
@@ -96,11 +194,22 @@ Ben bir <span class="string-highlight">Kimya Mühendisi</span> ve
             <div class="project-body">
                 <img class="project-img" src="src/projects/pblogmobile.png">
                 <p class="project-description">
-                    Bir üstteki blog uygulamasının mobil arayüzüdür.<br>
-                    React Native teknolojisi ile yapıldı ve react native öğrenmemi sağlayan uygulamadır.<br>
+                    Blog uygulamasının mobil arayüzüdür.<br>
+                    React Native teknolojisini öğrenmek amacıyla geliştirdiğim projedir.<br>
                     Blog sürekli geliştiği için henüz bütün özellikler bu uygulamada bulunmamaktadır.<br>
                     Şu an yalnızca giriş yapılıp blog yazılarına yorum yapılabilmektedir.<br>
                     Ancak ilerleyen zamanlarda bu uygulama da güncelleme alacaktır.<br>
+
+                    <span class="tech-section">Teknolojiler
+                        <span class="tech-stack">    
+                            <img src="src/icons/js.svg" class="tech-icon">
+                            <img src="src/icons/react.svg" class="tech-icon">
+                            <img src="src/icons/expo.svg" class="tech-icon">
+                        
+                        </span>
+                    </span>
+
+
                     <button class="learn-more" onclick="location.href='https://github.com/YunusEmreUyar/blogMobile'">
                         <span aria-hidden="true" class="circle">
                         <span class="icon arrow"></span>
@@ -117,6 +226,18 @@ Ben bir <span class="string-highlight">Kimya Mühendisi</span> ve
                 <p class="project-description">
                     Bu proje Kimya Mühendisleri Odası Ankara Şube'nin çıkarttığı CARBON06 dergisinin bütün sayılarının içerisinde bulunduğu
                     ve indirme linklerini kapsayan bir django crud uygulamasıdır.<br>
+
+                    <span class="tech-section">Teknolojiler
+                        <span class="tech-stack">    
+                            <img src="src/icons/python.svg" class="tech-icon">        
+                            <img src="src/icons/django.svg" class="tech-icon">
+                            <img src="src/icons/sqlite.svg" class="tech-icon">
+                            <img src="src/icons/bootstrap.svg" class="tech-icon">
+                            
+                        </span>
+                    </span>
+
+
                     <button class="learn-more" onclick="location.href='http://carbon06.pythonanywhere.com/'">
                         <span aria-hidden="true" class="circle">
                             <span class="icon arrow"></span>
@@ -132,32 +253,9 @@ Ben bir <span class="string-highlight">Kimya Mühendisi</span> ve
                 </p>
             </div>
         </div>
-        <div class="project">
-            <h2 class="project-name">LinkME Sosyal Medya Uygulaması</h2>
-            <div class="project-body">
-                <img src="src/projects/linkME.png" class="project-img">
-                <p class="project-description">
+        
 
-                    Bu proje django, django-drf, sqlite3, django-channels, nodejs ve redis kullanılarak yapılmıştır.<br>
-                    Projenin amacı öğrencilerin kendi ilgi alanlarına göre arkadaş edinebilmesi ve projeler geliştirebilmesine
-                    yardımcı olacak bir platformdur.<br>
-                    <br>
-                    Öğrenciler sistem üzerinden gerçek zamanlı olarak mesajlaşabilmekte ve isterlerse 
-                    grup içerisinde görüntülü konuşabilmektedir.<br><br>
-                    Gerçek zamanlı sohbet uygulaması django-channels ve redis yardımıyla yapılmış olup,<br>
-                    Görüntülü sohbet uygulaması nodejs ve socketio ile yapılmıştır.
-                    <br>
-                    Ayrıca kullanıcılar birbirlerine özel mesaj da atabilmektedir.<br>
-
-                    <button class="learn-more" onclick="alert('Yakında gelecek');">
-                        <span aria-hidden="true" class="circle">
-                            <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text">Kaynak kod</span>
-                    </button>
-                </p>
-            </div>
-        </div>
+        
     </div>
 
     <!-- 
